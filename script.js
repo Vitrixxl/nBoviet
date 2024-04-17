@@ -63,9 +63,9 @@ console.log("____________\u00B6\u00B6\r\n___________\u00B6\u00B6\u00B6\u00B6\r\n
     let infoProduit = produit.split(",");
 
     let idProduit = infoProduit[0];
-    console.log(infoProduit);
-
     
+
+
     if (infoProduit.length > 1) {
       await page.goto("https://deliver.biz/carte/options/" + idProduit, { timeout: 0 });
       await new Promise(resolve => setTimeout(resolve, 200));
@@ -75,13 +75,13 @@ console.log("____________\u00B6\u00B6\r\n___________\u00B6\u00B6\u00B6\u00B6\r\n
           const radioInput = document.querySelector("form:nth-of-type(" + test + ") .col-md-12 .headline-gamma");
           return radioInput ? radioInput.innerText : null;
         }, test);
-        console.log(currentLib);
-        if(idProduit==8){
-          var nbOption = infoProduit[step+1];
-        }else{
+        
+        if (idProduit == 8) {
+          var nbOption = infoProduit[step + 1];
+        } else {
           var nbOption = infoProduit[step];
         }
-        
+
         nbOption++;
         if ((idProduit == 32 || idProduit == 27 || idProduit == 183 || idProduit == 29 || idProduit == 28 || idProduit == 30 || idProduit == 31) && nbOption == 7) {
           await page.click("form:nth-of-type(" + step + ") .col-md-6:nth-of-type(" + 4 + ")");
@@ -90,7 +90,7 @@ console.log("____________\u00B6\u00B6\r\n___________\u00B6\u00B6\u00B6\u00B6\r\n
           await page.click("form:nth-of-type(" + step + ") .col-md-6:nth-of-type(" + 10 + ")");
           await new Promise(resolve => setTimeout(resolve, 50));
         } else if (idProduit == 171 && currentLib == "OPTIONS MÌ KHÔ") {
-          console.log(nbOption)
+          
           switch (nbOption) {
             case 6:
               await page.click("form:nth-of-type(" + step + ") .col-md-6:nth-of-type(" + 3 + ")");
@@ -118,11 +118,14 @@ console.log("____________\u00B6\u00B6\r\n___________\u00B6\u00B6\u00B6\u00B6\r\n
               break;
           }
         } else {
-          if (step + 1 == infoProduit.length || currentLib == "NEM BOBUN" || currentLib == "CACAHUÈTE BOBUN & PAD THAÏ" || currentLib == "BASE POKE BOWL" || currentLib == "CUISSON BOEUF" || currentLib == "OPTIONS SOUPES" || currentLib == "VIANDE MEZZE" || currentLib == "BASE POKE BOWL") {
-            
-            
-            if ((currentLib == "CUISSON BOEUF" || currentLib == "OPTIONS SOUPES" || currentLib == "VIANDE MEZZE") && nbOption >= 4) {
+          if (step + 1 == infoProduit.length || currentLib == "NEM BOBUN" || currentLib == "CACAHUÈTE BOBUN & PAD THAÏ" || currentLib == "BASE POKE BOWL" || currentLib == "CUISSON BOEUF" || currentLib == "OPTIONS SOUPES" || currentLib == "VIANDE MEZZE" || currentLib == "BASE POKE BOWL" || currentLib == "SAUCE POKE BOWL") {
+          
+            console.log(currentLib +" : "+nbOption)
+            if ((currentLib == "CUISSON BOEUF" || currentLib == "OPTIONS SOUPES" || currentLib == "VIANDE MEZZE" || currentLib == "SAUCE POKE BOWL") && nbOption >= 4) {
               nbOption++;
+              if (currentLib == "SAUCE POKE BOWL"){
+                nbOption++
+              }
               if (nbOption >= 6) {
                 nbOption++;
                 if (nbOption == 8) {
@@ -131,12 +134,12 @@ console.log("____________\u00B6\u00B6\r\n___________\u00B6\u00B6\u00B6\u00B6\r\n
               }
             }
             nbOption++;
-            if (currentLib=="FORMAT COCA"){
+            if (currentLib == "FORMAT COCA") {
               nbOption--;
             }
           }
 
-          console.log(currentLib);
+          
           // console.log("form:nth-of-type("+step+") .col-md-6:nth-of-type("+nbOption+")");
           if (currentLib == "CONSIGNE DESSERT ÉCOLOGIQUE") {
 
@@ -154,7 +157,7 @@ console.log("____________\u00B6\u00B6\r\n___________\u00B6\u00B6\u00B6\u00B6\r\n
       await page.goto("https://deliver.biz/carte/produit/" + idProduit, { timeout: 0 });
       await new Promise(resolve => setTimeout(resolve, 50));
     }
-    
+
     const addToCart = '.addToCart';
     await page.click(addToCart)
     await new Promise(resolve => setTimeout(resolve, 1000));

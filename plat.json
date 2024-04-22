@@ -457,16 +457,6 @@
               "opt1": "FARINE DE BLE",
               "opt2": "RIZ"
             },
-            "viande": {
-              "opt1": "Porc",
-              "opt2": "Poulet",
-              "opt3": "Tofu sauté",
-              "opt4": "Boeuf bleu",
-              "opt5": "Boeuf saignant",
-              "opt6": "Boeuf a point",
-              "opt7": "Boeuf bien cuit",
-              "opt8": "Gambas"
-            },
             "option": {
               "opt1": "sans",
               "opt2": "Piment",
@@ -477,6 +467,17 @@
               "opt7": "Oignon + Piment",
               "opt8": "Tout"
             },
+            "viande": {
+              "opt1": "Porc",
+              "opt2": "Poulet",
+              "opt3": "Tofu sauté",
+              "opt4": "Boeuf bleu",
+              "opt5": "Boeuf saignant",
+              "opt6": "Boeuf a point",
+              "opt7": "Boeuf bien cuit",
+              "opt8": "Gambas"
+            },
+
             "Chauffé": {
               "opt1": "Chauffé",
               "opt2": "Froid"

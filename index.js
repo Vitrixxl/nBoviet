@@ -42,7 +42,8 @@ function transiOrder(){
         
         
         setTimeout(() => {
-            window.location.href='http://localhost:8080/php/vietbovis/Boviet/index.php?page=order'
+            window.location.href='https://boviet.groupebovis.local/index.php?page=order'
+            
         }, 250);
     }, 250);
 }
@@ -65,7 +66,7 @@ function transiCart(){
     }, 250);
     
     setTimeout(() => {
-        window.location.href="http://localhost:8080/php/vietbovis/Boviet/index.php?page=panier";
+        window.location.href="https://boviet.groupebovis.local/index.php?page=panier";
     }, 1000);
     
 }

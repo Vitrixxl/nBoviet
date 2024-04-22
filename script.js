@@ -122,7 +122,7 @@ console.log("____________\u00B6\u00B6\r\n___________\u00B6\u00B6\u00B6\u00B6\r\n
           if (step + 1 == infoProduit.length || currentLib == "NEM BOBUN" || currentLib == "CACAHUÈTE BOBUN & PAD THAÏ" || currentLib == "BASE POKE BOWL" || currentLib == "CUISSON BOEUF" || currentLib == "OPTIONS SOUPES" || currentLib == "VIANDE MEZZE" || currentLib == "BASE POKE BOWL" || currentLib == "SAUCE POKE BOWL") {
           
             console.log(currentLib +" : "+nbOption)
-            if ((currentLib == "CUISSON BOEUF" || currentLib == "OPTIONS SOUPES" || currentLib == "VIANDE MEZZE" || currentLib == "SAUCE POKE BOWL") && nbOption >= 4) {
+            if ((currentLib == "CUISSON BOEUF" || currentLib == "OPTIONS SOUPES" || currentLib == "VIANDE MEZZE" || currentLib == "SAUCE POKE BOWL" || currentLib == "NEM BOBUN") && nbOption >= 4) {
               nbOption++;
               if (currentLib == "SAUCE POKE BOWL"){
                 nbOption++

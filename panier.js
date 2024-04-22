@@ -153,7 +153,7 @@ function adminTransi() {
 
 
 function copyGitPull() {
-    let gitPull = 'cd \\Users\\CANDAS ; cd .\\Desktop\\DOC\\VS_Code\\vraiRepoViet\\boviet ; git pull';
+    let gitPull = 'cd \\Users\\CANDAS ; cd .\\Desktop\\DOC\\VS_Code\\vraiRepoViet\\boviet\\nBoviet ; git pull';
     navigator.clipboard.writeText(gitPull).then(() => {
         alert('GitPull copié !');
     })

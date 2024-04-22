@@ -8,6 +8,7 @@ $chemin_fichier_json = './plat.json';
 $contenu_json = file_get_contents($chemin_fichier_json);
 $data = json_decode($contenu_json, true);
 ?>
+
 <div class="panierContainer">
     <img src='images/meal2.webp' alt='' class='panBackground'>
     <span class="bgCoverPanier"></span>
@@ -35,7 +36,7 @@ $data = json_decode($contenu_json, true);
             $pass = 'J&_9VZ8Tej9xk9%';
             $db = 'lab_database';
 
-            $connexion = new mysqli("localhost", "root", "", "boviet");
+            $connexion= new mysqli($host,$user ,$pass,$db );
             $verifActif = $connexion->query("SELECT pan_actif from current_pan");
             foreach ($verifActif as $key) {
                 if ($key['pan_actif'] == true) {
@@ -151,5 +152,5 @@ $data = json_decode($contenu_json, true);
     </form>
 </div> -->
 </div>
-</div>
 <script type='text/javascript' src="panier.js"></script>
+</div>

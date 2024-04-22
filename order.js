@@ -28,31 +28,31 @@ function platTransition(e){
         switch (e) {
             case sectionEntree:
                 setTimeout(() => {
-                    window.location.href ='http://localhost:8080/php/vietbovis/Boviet/index.php?page=plat&plat=entree';
-                }, 600);
+                    window.location.href ='https://boviet.groupebovis.local/index.php?page=plat&plat=entree';
+                }, 600);https://boviet.groupebovis.local/index.php?page=plat&plat=viandes
                 break;
         
             case sectionPlat:
                 setTimeout(() => {
-                    window.location.href ='http://localhost:8080/php/vietbovis/Boviet/index.php?page=plat&plat=plat';
+                    window.location.href ='https://boviet.groupebovis.local/index.php?page=plat&plat=plat';
                 }, 600);
                 break;
 
             case sectionViande:
                 setTimeout(() => {
-                    window.location.href ='http://localhost:8080/php/vietbovis/Boviet/index.php?page=plat&plat=viandes';
+                    window.location.href ='https://boviet.groupebovis.local/index.php?page=plat&plat=viandes';
                 }, 600);
                 break;
             
             case sectionPoisson:
                 setTimeout(() => {
-                    window.location.href ='http://localhost:8080/php/vietbovis/Boviet/index.php?page=plat&plat=poissons';
+                    window.location.href ='https://boviet.groupebovis.local/index.php?page=plat&plat=poissons';
                 }, 600);
                 break;
 
             case sectionOther:
                 setTimeout(() => {
-                    window.location.href ='http://localhost:8080/php/vietbovis/Boviet/index.php?page=plat&plat=accompagnement';
+                    window.location.href ='https://boviet.groupebovis.local/index.php?page=plat&plat=accompagnement';
                 }, 600);
                 break;
         }

@@ -97,7 +97,7 @@ const pikaPrint = setInterval(() => {
           const radioInput = document.querySelector("form:nth-of-type(" + test + ") .col-md-12 .headline-gamma");
           return radioInput ? radioInput.innerText : null;
         }, test);
-        
+        console.log(currentLib)
         if (idProduit == 8) {
           var nbOption = infoProduit[step + 1];
         } else {

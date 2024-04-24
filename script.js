@@ -103,7 +103,7 @@ const pikaPrint = setInterval(() => {
         } else {
           var nbOption = infoProduit[step];
         }
-
+        console.log(nbOption)
         nbOption++;
         if ((idProduit == 32 || idProduit == 27 || idProduit == 183 || idProduit == 29 || idProduit == 28 || idProduit == 30 || idProduit == 31) && nbOption == 7) {
           await page.click("form:nth-of-type(" + step + ") .col-md-6:nth-of-type(" + 4 + ")");

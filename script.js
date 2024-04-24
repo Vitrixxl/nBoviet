@@ -46,13 +46,11 @@ let pika  = "____________\u00B6\u00B6\r\n___________\u00B6\u00B6\u00B6\u00B6\r\n
 let i=0
 const pikaPrint = setInterval(() => {
   if (pika.charAt(i)){
-    process.stdout.write(pika.charAt(i))
-    process.stdout.write(pika.charAt(i+1))
-    process.stdout.write(pika.charAt(i+2))
-    process.stdout.write(pika.charAt(i+3))
-    process.stdout.write(pika.charAt(i+4))
-    process.stdout.write(pika.charAt(i+5))
-    process.stdout.write(pika.charAt(i+6))
+    for (let ii = 0; ii < 6; ii++) {
+      process.stdout.write(pika.charAt(i+ii))
+      
+    }
+
     i+=7
   }else{
     clearInterval(pikaPrint)
@@ -143,7 +141,7 @@ const pikaPrint = setInterval(() => {
           }
         } else {
           if (step + 1 == infoProduit.length || currentLib == "NEM BOBUN" || currentLib == "CACAHUÈTE BOBUN & PAD THAÏ" || currentLib == "BASE POKE BOWL" || currentLib == "CUISSON BOEUF" || currentLib == "OPTIONS SOUPES" || currentLib == "VIANDE MEZZE" || currentLib == "BASE POKE BOWL" || currentLib == "SAUCE POKE BOWL") {
-          
+            console.log(currentLib)
            
             if ((currentLib == "CUISSON BOEUF" || currentLib == "OPTIONS SOUPES" || currentLib == "VIANDE MEZZE" || currentLib == "SAUCE POKE BOWL" || currentLib == "NEM BOBUN") && nbOption >= 4) {
               nbOption++;

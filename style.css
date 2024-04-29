@@ -39,43 +39,66 @@ body {
     animation: deroule 1s forwards;
 
 }
-.connexion.bye{
+
+.connexion.bye {
     animation: disappearConnect 1s forwards;
 
 }
+
 @keyframes disappearConnect {
-    0%{opacity: 1;}
-    50%{opacity: 1;}
-    100%{opacity:0}
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0
+    }
 }
-.connexion *.bye{
+
+.connexion *.bye {
     animation: childDisappearConnect 0.5s forwards
 }
+
 @keyframes childDisappearConnect {
-    0%{opacity: 1;}
-    100%{opacity:0}
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0
+    }
 }
+
 .connexion * {
-    animation : connectAppear 2s forwards;
+    animation: connectAppear 2s forwards;
     text-align: center;
 }
+
 @keyframes connectAppear {
-    0%{
+    0% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
+
 @keyframes deroule {
-    0%{
+    0% {
         height: 0;
 
     }
-    100%{
+
+    100% {
         height: 400px
     }
 }
@@ -178,7 +201,7 @@ nav {
 }
 
 .option>a:hover>span {
-    
+
     color: #03160e;
 }
 
@@ -192,7 +215,7 @@ nav {
     font-size: 20px;
     color: white;
     /* background-color: rgb(255, 255, 255); */
-    
+
     transition: 0.5s;
     padding-top: 1px;
     box-sizing: border-box;
@@ -294,7 +317,7 @@ nav {
 
 
 /* -----------------------------------------------------LISTE PLATS ------------------------------------------------------------------------*/
-.infoAdd{
+.infoAdd {
     position: absolute;
     top: 10%;
     left: calc(50% - 200px);
@@ -306,35 +329,40 @@ nav {
     width: 400px;
     height: 90%;
     pointer-events: none;
-    
+
 }
-.infoAdd h3{
+
+.infoAdd h3 {
     margin: 0;
     background-color: white;
     color: #03160e;
     padding: 5px 20px;
     transition: 0.3s;
     animation: destroyer 3s forwards;
-    
+
 }
+
 @keyframes destroyer {
-    80%{
+    80% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
         display: none;
     }
 }
-.backgroundTransi{
+
+.backgroundTransi {
     position: absolute;
     width: 110%;
     transition: 1.5s;
     left: -5%;
     top: -145%;
-    transform-origin: left top!important;
+    transform-origin: left top !important;
     z-index: 900000;
 }
+
 .gigaContainer {
     height: 90%;
     background-color: #194327;
@@ -345,14 +373,16 @@ nav {
     position: relative;
     background-size: 100vw;
 }
-input[type="submit"]{
+
+input[type="submit"] {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     border-radius: 0;
     border-style: none;
-    cursor: pointer; 
+    cursor: pointer;
 }
-select{
+
+select {
     border-style: none;
     border-radius: 0;
     border-color: none;
@@ -360,10 +390,10 @@ select{
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     border-image: none;
-    color:#03160e;
+    color: #03160e;
     font-weight: 500;
     background-color: white;
-    
+
 }
 
 .platContainer {
@@ -377,45 +407,51 @@ select{
     gap: 50px;
     box-sizing: border-box;
     padding: 5px;
-    animation: coming 1s forwards ease-out ;
+    animation: coming 1s forwards ease-out;
     bottom: 230%;
     transition: transform 0.5s linear;
-    
+
 }
-.platContainer.backward{
+
+.platContainer.backward {
     animation: back 1s forwards ease-out;
 
 }
 
-.cardPlatmargin:hover>div>h3{
+.cardPlatmargin:hover>div>h3 {
     color: #03160e;
     transition: 0.3s;
     user-select: none;
 }
-.cardPlatmargin:hover>div>div>div>p{
+
+.cardPlatmargin:hover>div>div>div>p {
     color: #03160e;
     transition: 0.3s;
-    
+
 }
-.cardPlatmargin:hover>div>div>div>select{
+
+.cardPlatmargin:hover>div>div>div>select {
     font-weight: 500;
     color: white;
     transition: 0.3s;
     background-color: #03160e;
 }
-.addToCart{
+
+.addToCart {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     border-radius: 0;
     border-style: none;
-    cursor: pointer; 
+    cursor: pointer;
     transition: 0.3s;
 }
-.cardPlatmargin:hover>div>div>button{
+
+.cardPlatmargin:hover>div>div>button {
     background-color: #03160e;
     color: white;
 }
-.optionContainer{
+
+.optionContainer {
     width: 90%;
     height: 100%;
     display: flex;
@@ -424,11 +460,13 @@ select{
     flex-direction: column;
     padding: 5% 0 2% 0;
 }
-.optLib{
+
+.optLib {
     font-size: small;
     padding-top: 4px;
-    color:rgb(203, 203, 203);
+    color: rgb(203, 203, 203);
 }
+
 @keyframes coming {
     99% {
         overflow: visible;
@@ -442,23 +480,23 @@ select{
 
 .gigaContainer.containEntree {
     background-image: url(images/entree1.jpeg);
-    background-size: cover!important;
+    background-size: cover !important;
 }
 
 .gigaContainer.containViande {
     background-image: url(images/viande2.jpg);
-    background-size: cover!important;
+    background-size: cover !important;
 }
 
 .gigaContainer.containPlat {
     background-image: url(images/plat.jpeg);
-    background-size: cover!important;
+    background-size: cover !important;
 }
 
 .gigaContainer.containPoisson {
     background-image: url(images/423566\ \(1\).jpg);
-    background-repeat:no-repeat;
-    background-size: cover!important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
 }
 
 .gigaContainer.containAccompagnement {
@@ -489,10 +527,12 @@ select{
     width: 500px;
     height: 350px;
 }
+
 .cardPlatmargin.platViande {
     width: 420px;
     height: 330px;
 }
+
 .cardPlatmargin.platPlat {
     width: 430px;
     height: 330px;
@@ -514,7 +554,7 @@ select{
     border-color: #03160e;
     color: white;
     transition: 0.3s;
-     border: 2px solid  #03160e;
+    border: 2px solid #03160e;
     box-shadow: 13px 13px 15px -5px rgba(0, 0, 0, 0.896);
 }
 
@@ -526,8 +566,8 @@ select{
     width: 100%;
     height: 100%;
     background-color: white;
-   
-    border: 2px solid  #03160e;
+
+    border: 2px solid #03160e;
 }
 
 /* -----------------------------------------------------LISTE PLATS ------------------------------------------------------------------------*/
@@ -560,14 +600,15 @@ select{
 
 
 /*---------------------------------------------------------------------MENU PLAT------------------------------------------------------------*/
-.backgroundMenu{
+.backgroundMenu {
     position: absolute;
     width: 110%;
     left: -5%;
     top: -5%;
-    transform-origin: left top!important;
-    
+    transform-origin: left top !important;
+
 }
+
 .biggerContainer {
     background-image: url(images/meal2.webp);
     background-position-x: 0;
@@ -588,18 +629,21 @@ select{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    
+
 }
-.choixTypePlatContainer.reduce{
+
+.choixTypePlatContainer.reduce {
     width: 100%;
     animation: reduce 1s forwards;
 }
+
 @keyframes reduce {
-    
-    100%{
+
+    100% {
         width: 0px;
     }
 }
+
 @keyframes growing {
     100% {
         width: 100%;
@@ -637,26 +681,26 @@ select{
 }
 
 .platSec>div:hover {
-    opacity: 0!important;
+    opacity: 0 !important;
 }
 
 .aEntree {
     background-image: url(images/entree1.jpeg);
-    
+
     background-size: 100vw !important;
-    
+
 }
 
 .aPlat {
     background-image: url(images/plat.jpeg);
     background-size: 100vw !important;
-   
+
 }
 
 .aViande {
     background-image: url(images/viande2.jpg);
     background-size: 100vw !important;
-    
+
 
 }
 
@@ -700,7 +744,7 @@ select{
 
 
 platSec>div:hover {
-    opacity: 0!important;
+    opacity: 0 !important;
 }
 
 .platSec h1 {
@@ -808,12 +852,13 @@ platSec>div:hover {
     position: absolute;
     z-index: -10;
     width: 110%;
-   
+
     top: -5%;
     left: -5%;
-    
+
     /* height: 110%; */
 }
+
 /* .backgroundAccueil.anim{
 animation: placement 1s forwards;
 } */
@@ -858,14 +903,16 @@ animation: placement 1s forwards;
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative;
+    position: relative;
     opacity: 1;
-    box-shadow: 0px 17px 15px 0px rgba(0,0,0,0.4),0px -17px 15px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 17px 15px 0px rgba(0, 0, 0, 0.4), 0px -17px 15px 0px rgba(0, 0, 0, 0.4);
 }
-.d3.disapear{
+
+.d3.disapear {
     height: 0%;
 }
-.masker1{
+
+.masker1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -874,28 +921,33 @@ animation: placement 1s forwards;
     animation: byebye1 2s forwards;
     background-color: #06281a;
 }
-.masker2{
+
+.masker2 {
     position: absolute;
     top: 0;
     right: 0;
     width: 50%;
     height: 100%;
-    animation: byebye2 2s forwards ; 
+    animation: byebye2 2s forwards;
     background-color: #06281a;
 }
+
 @keyframes byebye1 {
-    35%{
-        left:0;
+    35% {
+        left: 0;
     }
-    100%{
+
+    100% {
         left: -50%;
     }
 }
+
 @keyframes byebye2 {
-    35%{
-        right:0;
+    35% {
+        right: 0;
     }
-    100%{
+
+    100% {
         right: -50%;
     }
 }
@@ -961,7 +1013,7 @@ animation: placement 1s forwards;
 
 /*-----------------------------------------------------------------Panier---------------------------------------------------------------*/
 
-.panierContainer{
+.panierContainer {
     height: 90%;
     width: 100%;
     display: flex;
@@ -971,7 +1023,8 @@ animation: placement 1s forwards;
     position: relative;
     overflow: hidden;
 }
-.logOut{
+
+.logOut {
     background-color: #03160e;
     width: 50px;
     height: 50px;
@@ -981,59 +1034,70 @@ animation: placement 1s forwards;
     align-items: center;
     bottom: 20px;
     left: 20px;
-    z-index:9999999999999999999999999999999999;
+    z-index: 9999999999999999999999999999999999;
     animation: titleAppear 2s forwards;
 }
-.logOut>*{
+
+.logOut>* {
     width: 30px;
     height: 40px;
 }
-.panBackground{
+
+.panBackground {
     position: absolute;
     z-index: 1;
     width: 110%;
     top: -5%;
     left: -5%;
-    
+
 }
-.bgCoverPanier{
+
+.bgCoverPanier {
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: #496e3f;
-    
+
     z-index: 2;
     transition: 0.5s;
     animation: lateCome 1s forwards;
     opacity: 0.7;
 }
-.bgCoverPanier.connect{
+
+.bgCoverPanier.connect {
     animation: none;
 }
-@keyframes lateCome{
-    0%{
+
+@keyframes lateCome {
+    0% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 0;
     }
-    100%{
-        opacity : 0.7
+
+    100% {
+        opacity: 0.7
     }
 }
-.bgCoverPanier.readyToGo{
-animation: leaveLate 2s forwards;
-z-index: -11;
+
+.bgCoverPanier.readyToGo {
+    animation: leaveLate 2s forwards;
+    z-index: -11;
 }
-@keyframes leaveLate{
-    0%{
+
+@keyframes leaveLate {
+    0% {
         opacity: 0.7;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
-} 
-.cartContainer{
+}
+
+.cartContainer {
     width: 0%;
     height: 0%;
     display: flex;
@@ -1048,44 +1112,50 @@ z-index: -11;
     animation: 1s appear forwards;
     position: relative;
 }
-@keyframes appear{
-    30%{
+
+@keyframes appear {
+    30% {
         width: 0;
         height: 100%;
     }
-    100%{
+
+    100% {
         height: 100%;
         width: 60%;
     }
 }
-.cartTitle{
+
+.cartTitle {
     width: 100%;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.cartTitre{
+
+.cartTitre {
     opacity: 0;
     color: white;
     animation: titleAppear 2s forwards;
     transition: 1s;
 }
-@keyframes titleAppear{
-    0%{
+
+@keyframes titleAppear {
+    0% {
         opacity: 0;
     }
-    
-    50%{
+
+    50% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-.cartContent{
+.cartContent {
     width: 600px;
     height: 100%;
     display: flex;
@@ -1100,34 +1170,40 @@ z-index: -11;
     position: relative;
     position: relative;
 }
-.bottomCover,.bottomCover2{
+
+.bottomCover,
+.bottomCover2 {
     width: 100%;
     height: 0%;
     position: absolute;
     bottom: 0;
-    
-    background:linear-gradient(180deg, rgba(252,252,251,0) 0%, #06281a 100%);
+
+    background: linear-gradient(180deg, rgba(252, 252, 251, 0) 0%, #06281a 100%);
     z-index: 999;
     animation: appearBottom 2s forwards;
 }
- 
+
 
 @keyframes appearBottom {
-    30%{
+    30% {
         height: 0;
     }
-    100%{
+
+    100% {
         height: 100px;
     }
 }
+
 .cartContent::-webkit-scrollbar-thumb {
     display: block;
- 
+
 }
-.cartContent::-webkit-scrollbar{
+
+.cartContent::-webkit-scrollbar {
     display: none;
 }
-.contentLine{
+
+.contentLine {
     width: 500px;
     opacity: 0;
     background-color: white;
@@ -1140,50 +1216,56 @@ z-index: -11;
     animation: lineAppear 2s forwards;
 
 }
-.oups{
+
+.oups {
     opacity: 0;
     animation: lineAppear 2s forwards;
 }
+
 @keyframes lineAppear {
-    50%{
-        opacity:0;
+    50% {
+        opacity: 0;
 
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
+
 /* .contentLine.here{
     opacity: 1;
     transition: 1s;
 } */
-.contentLine *{
+.contentLine * {
     opacity: 0;
     transition: .5s;
 }
+
 /* .contentLine.here{
     opacity: 1;
 } */
-.contentLine h4.here{
+.contentLine h4.here {
     opacity: 1;
 }
-.contentLine h4.deleted{
-     transition: 0.5s!important;
-    transform:scale(1,0);
+
+.contentLine h4.deleted {
+    transition: 0.5s !important;
+    transform: scale(1, 0);
 }
 
-.contentLine.deleted{
-    transition: 0.5s!important;
-    transform:scale(1,0);
-    
-    
+.contentLine.deleted {
+    transition: 0.5s !important;
+    transform: scale(1, 0);
+
+
 }
 
-.removeBtn{
+.removeBtn {
     width: 30px;
     height: 30px;
     cursor: pointer;
-    border:none;
+    border: none;
     border-radius: 0;
     background-color: #03160e;
     justify-content: center;
@@ -1194,18 +1276,21 @@ z-index: -11;
 
 
 }
-.removeBtn.here{
-    opacity: 1;
-}
-.removeBtn.here span{
+
+.removeBtn.here {
     opacity: 1;
 }
 
-.iconRemove{
+.removeBtn.here span {
+    opacity: 1;
+}
+
+.iconRemove {
     font-size: 50px;
     color: white;
 }
-.switchDiv{
+
+.switchDiv {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -1219,13 +1304,15 @@ z-index: -11;
     transition: 0.5s;
 
 }
-.switchDiv.transi{
 
-   
+.switchDiv.transi {
+
+
     height: 100%;
 
 }
-.welcomeMaster{
+
+.welcomeMaster {
     color: white;
     width: 0;
     overflow: hidden;
@@ -1233,13 +1320,14 @@ z-index: -11;
     transition: 0.5s steps(34);
     white-space: nowrap;
 }
-.welcomeMaster.transi{
-    transition: 1.5s steps(34)!important;
-    width: 730px!important;
+
+.welcomeMaster.transi {
+    transition: 1.5s steps(34) !important;
+    width: 730px !important;
 
 }
 
-.globalCartContainer{
+.globalCartContainer {
     justify-content: center;
     align-items: center;
     display: none;
@@ -1252,10 +1340,12 @@ z-index: -11;
     position: relative;
     padding-bottom: 5%;
 }
-.globalCartContainer.visible{
+
+.globalCartContainer.visible {
     display: flex;
 }
-.uCartContainer{
+
+.uCartContainer {
     display: flex;
     background-color: #03160e;
     font-family: "Poppins", sans-serif;
@@ -1272,9 +1362,10 @@ z-index: -11;
 }
 
 
-.codeCopy{
+.codeCopy {
     display: none;
-    margin-top: 30px;padding-top: 4px;
+    margin-top: 30px;
+    padding-top: 4px;
     width: 240px;
     height: 40px;
     border: none;
@@ -1283,7 +1374,8 @@ z-index: -11;
     font-family: 'Romero', sans-serif;
     cursor: pointer;
 }
-.codeCopy.visible{
+
+.codeCopy.visible {
     display: block;
 
 }
@@ -1296,29 +1388,33 @@ z-index: -11;
     gap: 50px;
 }
 
-.cartContainer.readyToGo *{
+.cartContainer.readyToGo * {
     transition: 0.3s;
     opacity: 0;
 }
-.cartContainer.readyToGo{
+
+.cartContainer.readyToGo {
     animation: toGo 1s forwards;
     height: 100%;
     width: 60%;
 }
+
 @keyframes toGo {
-    30%{
+    30% {
         width: 60%;
-        
+
     }
 
-    100%{
+    100% {
         padding: 0;
         width: 0;
-       
+
     }
 }
-.cartValid{
-    margin-top: 30px;padding-top: 4px;
+
+.cartValid {
+    margin-top: 30px;
+    padding-top: 4px;
     width: 240px;
     height: 40px;
     border: none;
@@ -1329,7 +1425,7 @@ z-index: -11;
     animation: titleAppear 2s forwards;
 }
 
-.gotoAdmin{
+.gotoAdmin {
     position: absolute;
     top: 10px;
     right: 20px;
@@ -1425,7 +1521,8 @@ z-index: -11;
     gap: 30px;
     overflow: auto;
 }
-.backButton{
+
+.backButton {
     position: absolute;
     bottom: 30px;
     right: 30px;
@@ -1439,16 +1536,18 @@ z-index: -11;
     z-index: 999999;
     font-size: 40px;
 }
-.backButton:hover{
+
+.backButton:hover {
     color: #03160e;
     background-color: white;
 }
 
-.backButton.plat{
+.backButton.plat {
     color: #03160e;
     background-color: white;
 }
-.backButton.plat:hover{
+
+.backButton.plat:hover {
     color: white;
     background-color: #03160e;
 }
@@ -1458,14 +1557,25 @@ z-index: -11;
 
 
 
-.connectContainer{
+.connectContainer {
     background-image: url(images/meal2.webp);
     background-position-x: 0;
     background-position-y: 0;
     background-size: 110%;
-    height: 90%;
+
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btnConnect {
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+    border: 2px solid #03160e;
+    font-size: 17px;
+    padding: 0.5rem 0.8rem 0.2rem 0.8rem;
+    cursor: pointer;
+    font-family: 'Romero', sans-serif;
 }

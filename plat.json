@@ -482,6 +482,10 @@
             "Chauffé": {
               "opt1": "Chauffé",
               "opt2": "Froid"
+            },
+            "Soja":{
+              "opt1":"avec",
+              "opt2":"sans"
             }
           }
         },

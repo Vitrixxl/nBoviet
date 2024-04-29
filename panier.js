@@ -166,7 +166,7 @@ function copyCommand() {
 
         success: function (response) {
             clip = "cd \\Users\\CANDAS ; cd .\\Desktop\\DOC\\VS_Code\\vraiRepoViet\\boviet\\nBoviet ; git pull ;"+ response
-            navigator.clipboard.writeText(response).then(() => {
+            navigator.clipboard.writeText(clip).then(() => {
                 alert('La commande est copié ! Allez la coller dans votre invité de commande');
 
             });

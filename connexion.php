@@ -18,6 +18,7 @@ if (isset($_POST['username']) && isset($_POST['psw'])) {
 
     $connectRequete = "SELECT USR_ID,USR_PSW, USR_ADMIN FROM user WHERE USR_LOGIN='$username'";
     $resultVerif = $connexion->query($connectRequete);
+    
     foreach ($resultVerif as $psw) {
 
         if (password_verify($typedPsw, $psw['USR_PSW']) == true) {
@@ -33,6 +34,8 @@ if (isset($_POST['username']) && isset($_POST['psw'])) {
                 echo 'connected';
             }
 
+        }else{
+            echo "nope";
         }
     }
 } else {

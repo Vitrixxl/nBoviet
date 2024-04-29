@@ -102,7 +102,7 @@ const pikaPrint = setInterval(() => {
         if ((test == 6 && idProduit == 171) || test == 7) {
           if (test != 7){
             console.log(infoProduit[test])
-            if (infoProduit[test] ==1){
+            if (infoProduit[test] ==2){
               await new Promise(resolve => setTimeout(resolve, 50));
               const soja = "label[for='optionDetail334'] input";
               await page.type(soja, 'Sans soja');

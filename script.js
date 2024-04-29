@@ -105,7 +105,7 @@ const pikaPrint = setInterval(() => {
             if (infoProduit[test] ==2){
               await new Promise(resolve => setTimeout(resolve, 50));
               const soja = "label[for='optionDetail334'] input";
-              await page.type(soja, 'Sans soja');
+              await page.type(soja, 'Sans soja svp');
               await new Promise(resolve => setTimeout(resolve, 50));
             }
           }
@@ -216,6 +216,7 @@ const pikaPrint = setInterval(() => {
   await page.click(".btn.btn-big.addToCart.btn-primary");
   await new Promise(resolve => setTimeout(resolve, 500));
   await page.click(".link.seeMore");
+  console.log("BIENVENUE SUR BOVIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET")
 })();
 
 

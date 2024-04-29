@@ -101,6 +101,7 @@ const pikaPrint = setInterval(() => {
         var test = step;
         if ((test == 6 && idProduit == 171) || test == 7) {
           if (test != 7){
+            console.log(infoProduit[test+1])
             if (infoProduit[test+1] ==1){
               await new Promise(resolve => setTimeout(resolve, 50));
               const soja = "label[for='optionDetail334'] input";
